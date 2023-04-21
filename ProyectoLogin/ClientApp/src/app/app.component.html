@@ -1,6 +1,27 @@
-<body>
+<!--
+
+  <body>
   <app-nav-menu></app-nav-menu>
   <div class="container">
     <router-outlet></router-outlet>
   </div>
 </body>
+
+
+
+
+-->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+<h1>Verificación de Credenciales</h1>
+<form>
+
+  <label>Usuario:</label>
+  <input [(ngModel)]="usuario" name="campoUsuario">
+  <br>
+  <label>Password:</label>
+  <input [(ngModel)]="password" type="password" name="campoPassword">
+  <br>
+  <button (click)="verificar()">Verificar</button>
+</form>
+<p>{{resultado}}</p>
